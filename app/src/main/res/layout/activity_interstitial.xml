@@ -14,6 +14,7 @@
         android:id="@+id/loadInterstitial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="loadInterstitial"
         android:text="@string/load_interstitial" />
 
     <Button
@@ -21,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:enabled="false"
+        android:onClick="displayInterstitial"
         android:text="@string/interstitial_not_ready" />
 
 </LinearLayout>

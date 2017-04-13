@@ -3,6 +3,7 @@
 
     <!-- Ad id -->
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
 
     <!-- MainActivity buttons -->
     <string name="banner_ad">Banner ad</string>
@@ -23,5 +24,8 @@
 
     <!-- InterstitialActivity buttons -->
     <string name="load_interstitial">Load Interstitial</string>
+    <string name="loading_interstitial">Loading Interstitial</string>
     <string name="interstitial_not_ready">Interstitial not ready</string>
+    <string name="show_interstitial">Show interstitial</string>
+
 </resources>
