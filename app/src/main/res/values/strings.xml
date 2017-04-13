@@ -14,5 +14,9 @@
     <string name="on_ad_closed">onAdClosed</string>
     <string name="on_ad_opened">onAdOpened</string>
 
-
+    <!-- AdListener errors -->
+    <string name="internal_error">Internal error</string>
+    <string name="invalid_request">Invalid request</string>
+    <string name="network_error">Network error</string>
+    <string name="no_fill">No fill</string>
 </resources>

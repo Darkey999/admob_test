@@ -2,9 +2,11 @@ package com.example.gosu.admobtest;
 
 
 import android.content.Context;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
 
 // Class for AdView listeners
 public class ToastListener extends AdListener {
@@ -31,9 +33,10 @@ public class ToastListener extends AdListener {
 
     // Problem with loading ad
     @Override
-    public void onAdFailedToLoad(int i) {
-        super.onAdFailedToLoad(i);
+    public void onAdFailedToLoad(int errorCode) {
+        super.onAdFailedToLoad(errorCode);
         Toast.makeText(context, R.string.on_ad_failed_to_load, Toast.LENGTH_SHORT).show();
+        Log.e("Ad_failed_to_load", errorMessage(errorCode));
     }
 
     // Ad leaves the application
@@ -48,5 +51,27 @@ public class ToastListener extends AdListener {
     public void onAdLoaded() {
         super.onAdLoaded();
         Toast.makeText(context, R.string.on_ad_loaded, Toast.LENGTH_SHORT).show();
+    }
+
+    // Return error String
+    private String errorMessage(int errorCode) {
+        String errorString = null;
+
+        switch (errorCode) {
+            case AdRequest.ERROR_CODE_INTERNAL_ERROR:
+                errorString = context.getString(R.string.internal_error);
+                break;
+            case AdRequest.ERROR_CODE_INVALID_REQUEST:
+                errorString = context.getString(R.string.invalid_request);
+                break;
+            case AdRequest.ERROR_CODE_NETWORK_ERROR:
+                errorString = context.getString(R.string.network_error);
+                break;
+            case AdRequest.ERROR_CODE_NO_FILL:
+                errorString = context.getString(R.string.no_fill);
+                break;
+        }
+
+        return errorString;
     }
 }
