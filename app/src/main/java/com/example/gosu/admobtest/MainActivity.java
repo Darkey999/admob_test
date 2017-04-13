@@ -18,4 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BannerActivity.class);
         startActivity(intent);
     }
+
+    // Interstitial ad Button clicked
+    public void openInterstitial(View view) {
+        Intent intent = new Intent(this, InterstitialActivity.class);
+        startActivity(intent);
+    }
 }

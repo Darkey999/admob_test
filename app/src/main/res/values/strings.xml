@@ -4,8 +4,9 @@
     <!-- Ad id -->
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
-    <!-- MainActivity button -->
+    <!-- MainActivity buttons -->
     <string name="banner_ad">Banner ad</string>
+    <string name="interstitial_ad">Interstitial ad</string>
 
     <!-- Toasts messages -->
     <string name="on_ad_loaded">onAdLoaded</string>
@@ -19,4 +20,8 @@
     <string name="invalid_request">Invalid request</string>
     <string name="network_error">Network error</string>
     <string name="no_fill">No fill</string>
+
+    <!-- InterstitialActivity buttons -->
+    <string name="load_interstitial">Load Interstitial</string>
+    <string name="interstitial_not_ready">Interstitial not ready</string>
 </resources>
