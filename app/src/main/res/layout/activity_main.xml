@@ -12,5 +12,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/banner_ad"/>
+        android:text="@string/banner_ad"
+        android:onClick="openBannerActivity"/>
 </RelativeLayout>
