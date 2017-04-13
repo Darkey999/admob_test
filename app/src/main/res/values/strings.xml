@@ -7,5 +7,12 @@
     <!-- MainActivity button -->
     <string name="banner_ad">Banner ad</string>
 
+    <!-- Toasts messages -->
+    <string name="on_ad_loaded">onAdLoaded</string>
+    <string name="on_ad_left_application">onAdLeftApplication</string>
+    <string name="on_ad_failed_to_load">onAdFailedToLoad</string>
+    <string name="on_ad_closed">onAdClosed</string>
+    <string name="on_ad_opened">onAdOpened</string>
+
 
 </resources>

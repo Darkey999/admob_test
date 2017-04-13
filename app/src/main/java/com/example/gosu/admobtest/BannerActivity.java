@@ -18,7 +18,7 @@ public class BannerActivity extends AppCompatActivity {
 
         // Create request for ad
         AdRequest adRequest = new AdRequest.Builder().build();
+        adView.setAdListener(new ToastListener(this));
         adView.loadAd(adRequest);
-
     }
 }
